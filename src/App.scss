@@ -5,25 +5,22 @@
   text-align: center;
 }
 
-form {
-  > input,
-  > textarea {
-    width: 100%;
-    display: block;
-    font-size: 18px;
-    padding: 5px 7px;
-    outline: none;
-    border-radius: 5px;
-    transition: border-color 0.5s;
-
-    &:focus {
-      border-color: aqua;
+  input,
+  textarea{
+      width: 100%;
+      display: block;
+      font-size: 18px;
+      padding: 5px 7px;
+      outline: none;
+      border-radius: 5px;
+      transition: border-color 0.5s;
+  
+      &:focus {
+        border-color: aqua;
+      }
     }
-  }
-
-  > textarea {
-    height: 10rem;
-    resize: none;
-    margin: 20px auto;
-  }
-}
+    textarea {
+      height: 10rem;
+      resize: none;
+      margin: 20px auto;
+    }
