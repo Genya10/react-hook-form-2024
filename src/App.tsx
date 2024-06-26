@@ -3,10 +3,11 @@ import "./App.scss";
 import { IForm } from "./types/form";
 import { InputEmail } from "./components/InputEmail";
 import { TextAreaMessage } from "./components/TextAreaMessage";
+import { Checkbox } from "./components/Checkbox";
 import { useEffect } from "react";
 
 function App() {
-  const {register, handleSubmit, formState, reset, watch } = useForm<IForm>();
+  const {register, handleSubmit, formState, reset, watch, control } = useForm<IForm>();
 
   const emailWatch = watch('email')
 
@@ -36,6 +37,7 @@ function App() {
       <form onSubmit={handleSubmit(onSubmit)}>
         <InputEmail register={register} formState={formState}/>
         <TextAreaMessage register={register} formState={formState}/>
+        <Checkbox control={control}/>
         <button type="submit">Send</button>
       </form>
     </>
