@@ -1,13 +1,8 @@
-import {useForm} from "react-hook-form";
 import "./../App.scss";
-import { IForm,FormProps } from "../types/form";
+import {FormProps } from "../types/form";
 
 
 export const TextAreaMessage =({register, formState}:FormProps)=>{
-
-    /*const {register, formState} = useForm<IForm>({
-        mode:"onChange"
-    })*/
     
     const messageError = formState.errors["message"]?.message
 

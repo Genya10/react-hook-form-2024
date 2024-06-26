@@ -1,13 +1,8 @@
-import { useForm } from "react-hook-form";
-import { IForm , FormProps} from "../types/form";
+import {FormProps} from "../types/form";
 import './../App.scss';
 
 
 export const InputEmail = ({register,formState}: FormProps) => {
-
- /* const { register, formState } = useForm<IForm>({
-    mode: "onChange",
-  });*/
 
   const emailError = formState.errors["email"]?.message;
 

@@ -1,4 +1,4 @@
-import {UseFormRegister,FormState} from 'react-hook-form'
+import {UseFormRegister, FormState} from 'react-hook-form'
 
 export interface IForm{
     'email': string,
